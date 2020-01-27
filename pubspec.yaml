@@ -9,6 +9,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  permission_handler: ^4.2.0+hotfix.2
+  contacts_service: ^0.3.10
+  camera: ^0.5.7+3
+  image_picker: ^0.6.3+1
 
 dev_dependencies:
   flutter_test:
