@@ -30,6 +30,35 @@ flutter:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
+  fonts:
+    - family: AmaticSC
+      fonts:
+        - asset: fonts/AmaticSC-Regular.ttf
+        - asset: fonts/AmaticSC-Bold.ttf
+          weight: 700
+    - family: Caveat
+      fonts:
+        - asset: fonts/Caveat-Regular.ttf
+        - asset: fonts/Caveat-Bold.ttf
+          weight: 700
+    - family: DancingScript
+      fonts:
+        - asset: fonts/DancingScript-Regular.ttf
+    - family: Pacifico
+      fonts:
+        - asset: fonts/Pacifico.ttf
+    - family: GreatVibes
+      fonts:
+        - asset: fonts/GreatVibes-Regular.ttf
+    - family: IndieFlower
+      fonts:
+        - asset: fonts/IndieFlower-Regular.ttf
+    - family: OpenSans
+      fonts:
+        - asset: fonts/OpenSans-Regular.ttf
+        - asset: fonts/OpenSans-Italic.ttf
+          style: italic
+
   # fonts:
   #   - family: Schyler
   #     fonts:
