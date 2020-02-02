@@ -26,8 +26,6 @@ class _InvitePageState extends State<InvitePage> {
     //_contacts = await ContactsService.getContacts();
     // Faster to load without thumbnails
     _contacts = await ContactsService.getContacts(withThumbnails: false);
-    // If You want to unselect all selected if refresh occurs
-    //_selected.clear();
     setState(() {});
     return true;
   }
@@ -40,7 +38,6 @@ class _InvitePageState extends State<InvitePage> {
       title: Text(contact.displayName),
       onTap: () {
         print("Tapped on Contact: " + contact.displayName);
-        //_shared(contact.phones.elementAt(0).value);
       },
     );
   }
@@ -70,18 +67,25 @@ class _InvitePageState extends State<InvitePage> {
             },
           ),
           PopupMenuButton(
+            onSelected: (String val) {
+              print("You asked for: " + val);
+            },
             icon: Icon(Icons.more_vert),
-            itemBuilder: (BuildContext context) => <PopupMenuEntry> [
+            itemBuilder: (BuildContext context) => <PopupMenuEntry<String>> [
               const PopupMenuItem(
+                value: "invite",
                 child: Text("Invite a friend"),
               ),
               const PopupMenuItem(
+                value: "contacts",
                 child: Text("Contacts"),
               ),
               const PopupMenuItem(
+                value: "refresh",
                 child: Text("Refresh"),
               ),
               const PopupMenuItem(
+                value: "help",
                 child: Text("Help"),
               ),
             ],
