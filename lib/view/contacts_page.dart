@@ -59,6 +59,9 @@ class _InvitePageState extends State<InvitePage> {
         backgroundColor: ColorUtil().themeDark,
         centerTitle: true,
         title: Text('Select Contacts'),
+        bottom: PreferredSize(
+          child: Text(_contacts.length.toString() + " contacts"),
+        ),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search),
