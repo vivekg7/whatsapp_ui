@@ -60,6 +60,7 @@ class _InvitePageState extends State<InvitePage> {
         centerTitle: true,
         title: Text('Select Contacts'),
         bottom: PreferredSize(
+          preferredSize: Size(20, 100),
           child: Text(_contacts.length.toString() + " contacts"),
         ),
         actions: <Widget>[
